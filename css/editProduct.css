@@ -1,0 +1,226 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 9, 2021, 9:08:57 PM
+    Author     : Thai Ha
+*/
+
+/* TOP */
+nav.top {
+  width: 98%;
+  height: 80px;
+  margin-left: 1%;
+  /* border: 1px solid; */
+  display: flex;
+}
+
+/* TOP LEFT */
+nav.top .top_left {
+  width: 60%;
+  display: flex;
+  /* border: 1px solid; */
+  object-fit: contain;
+  padding-top: 35px;
+}
+nav.top .top_left a {
+  /* border: 1px solid; */
+  text-transform: uppercase;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 2%;
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
+}
+nav.top .top_left a:hover {
+  background-color: #e5e5e5;
+}
+
+/* TOP MIDDLE */
+nav.top .top_middle {
+  width: 40%;
+  display: flex;
+  /* border: 1px solid; */
+  object-fit: contain;
+  height: 80px;
+
+  text-align: center;
+}
+nav.top .top_middle img {
+  width: 60%;
+}
+
+/* TOP RIGHT */
+nav.top .top_right {
+  width: 60%;
+  display: flex;
+  /* border: 1px solid; */
+  object-fit: contain;
+  padding-top: 35px;
+}
+nav.top .top_right nav {
+  width: 100%;
+  display: flex;
+  /* border: 1px solid; */
+  margin-left: 43%;
+}
+nav.top .top_right nav a {
+  /* border: 1px solid; */
+  text-transform: uppercase;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 4%;
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
+}
+nav.top .top_right nav a:hover {
+  background-color: #e5e5e5;
+}
+
+/* MIDDLE */
+section.middle {
+  /* border: 1px solid; */
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 80px;
+  display: flex;
+}
+
+section.middle .left {
+  width: 40%;
+  padding-bottom: 400px;
+}
+section.middle .left p {
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 50px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: initial;
+}
+
+section.middle .right {
+  width: 60%;
+  padding-top: 50px;
+}
+section.middle .right input.top {
+  width: 80%;
+  height: 50px;
+  background-color: #ededed;
+  padding-left: 15px;
+  margin-left: 53px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+section.middle .right input.bottom {
+  width: 80%;
+  height: 25px;
+  background-color: #ededed;
+  padding-left: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.middle_left_group_2_3 {
+  width: 100%;
+}
+.middle_left_group_2_3 .title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding: 15px;
+}
+
+.middle_left_group_2_3 table {
+  width: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: smaller;
+  border-collapse: collapse;
+  border: 1px solid #ced4da;
+}
+
+.middle_left_group_2_3 thead tr th {
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid #ced4da;
+  height: 45px;
+}
+
+.middle_left_group_2_3 tbody td {
+  border-collapse: collapse;
+  border: 1px solid #ced4da;
+  text-align: right;
+  object-fit: contain;
+  padding: 2%;
+}
+
+.middle_left_group_2_3 table img {
+  width: 100%;
+}
+
+section.middle .right input.submit {
+  width: 30%;
+  height: 50px;
+  margin-left: 15%;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  touch-action: manipulation;
+}
+section.middle .right input.submit:hover {
+  background-color: #505253;
+}
+section.middle .right .right_bottom {
+  margin-left: 10%;
+}
+section.middle .right .right_bottom a:hover {
+  opacity: 50%;
+}
+section.middle .right a {
+  text-decoration: none;
+  color: black;
+}
+
+section.middle .right textarea {
+  width: 80%;
+  padding: 20px 0px 100px 15px;
+  margin: 30px 0px 30px 53px;
+  border: 1px solid #e7e7e7;
+  box-shadow: none;
+  background: #fbfbfb;
+}
+/* MIDDLE 5 */
+section.middle_5 {
+  width: 100%;
+  height: 150px;
+  border: 1px solid;
+  color: white;
+  background-color: black;
+}
+section.middle_5 .left {
+  width: 60%;
+  height: 150px;
+  padding-top: 50px;
+  text-transform: uppercase;
+}
+section.middle_5 .left .top {
+  display: flex;
+  padding-left: 50px;
+  font-size: 13px;
+}
+section.middle_5 .left .top div {
+  padding-right: 30px;
+}
+
+section.middle_5 .left .bottom {
+  font-size: 10px;
+  padding-left: 50px;
+  margin-top: 30px;
+}

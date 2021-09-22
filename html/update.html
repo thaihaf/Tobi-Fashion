@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/update.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="title">CHỈNH SỬA THÔNG TIN</div>
+            <div class="right">
+                <form name="editProfile" action="editProfile" method="POST" id="form">
+                    <div class="title1">Nhập Tên Sản Phẩm</div>
+                    <input type="text" name="name" value="" placeholder="Tên Sản Phẩm" />
+                    
+                    <div class="title1">Nhập Giá Sản Phẩm</div>
+                    <input type="text" name="price" value="" placeholder="Giá Sản Phẩm" />
+                    
+                    <div class="quantity">
+                        Nhập Số Lượng
+                        <input type="number" class="quantity" name="quantity" value="1" min="1" max="100"/>
+                    </div>
+
+                    <div class="type">
+                        Chọn Loại Sản Phẩm
+                        <select name="type">
+                            <option>Jacket</option>
+                            <option>Jeans</option>
+                        </select>
+                    </div>
+
+                    <div class="title1">Nhập Size Sản Phẩm</div>
+                    <input type="text" name="color" value="" placeholder="Nhập Size Sản Phẩm" />
+                    <div class="title1">Nhập Màu Sản Phẩm</div>
+                    <input type="text" name="color" value="" placeholder="Nhập Màu Sản Phẩm" />
+
+                    <div class="title1">Nhập Ảnh Sản Phẩm</div>
+                    <div style="display: flex;">
+                        
+                        <input type="text" name="color" value="" placeholder="Nhập Ảnh 1" />
+                    <input type="text" name="color" value="" placeholder="Nhập Ảnh 2" />
+                    </div>
+                    <div style="display: flex;">
+                        <input type="text" name="color" value="" placeholder="Nhập Ảnh 3" />
+                    <input type="text" name="color" value="" placeholder="Nhập Ảnh 4" />
+                    </div>
+                    <input type="text" name="color" value="" placeholder="Nhập Ảnh 5" />
+                    <input type="text" name="color" value="" placeholder="Nhập Ảnh Chọn Size" />
+                    
+                    <p>
+                        <input type="button" class="submit" name="applyDiscount" value="Xác nhận" id="myBtn" />
+                    </p>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

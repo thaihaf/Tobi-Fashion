@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="top-1">Đăng Ký để giảm ngay 20% cho đơn hàng Đầu Tiên</nav>
+    <style>
+      .top-1 {
+        width: 99%;
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 9px;
+        margin-top: -8px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-size: smaller;
+        font-family: Arial, Helvetica, sans-serif;
+        -webkit-animation: my 6200ms infinite;
+          -moz-animation: my 4200ms infinite;
+          -o-animation: my 4200ms infinite;
+          animation: my 4200ms infinite;
+      }
+        @-webkit-keyframes my {
+          0% {
+            color: #000000;
+          }
+          50% {
+            color: #fff;
+          }
+          100% {
+            color: #000000;
+          }
+        }
+        @-moz-keyframes my {
+          0% {
+            color: #000000;
+          }
+          50% {
+            color: #fff;
+          }
+          100% {
+            color: #000000;
+          }
+        }
+        @-o-keyframes my {
+          0% {
+            color: #000000;
+          }
+          50% {
+            color: #fff;
+          }
+          100% {
+            color: #000000;
+          }
+        }
+        @keyframes my {
+          0% {
+            color: #000000;
+          }
+          50% {
+            color: #fff;
+          }
+          100% {
+            color: #000000;
+          }
+        }
+        
+      
+    </style>
+
+    <nav class="top">
+      <div class="top_left">
+        <div class="store">
+          <a href="" class="left_layer1">Store</a>
+          <div class="left_store_layer2">
+            <ul>
+              <li><a href="">tees</a></li>
+              <li><a href="">hoodie/ sweater</a></li>
+              <li><a href="">jackets</a></li>
+              <li><a href="">jeans</a></li>
+              <li><a href="">paints</a></li>
+              <li><a href="">shorts</a></li>
+              <li><a href="">bags</a></li>
+              <li><a href="">accessories</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div><a href="" class="left_layer1">collection</a></div>
+        <div><a href="" class="left_layer1">blog</a></div>
+
+        <div class="search">
+          <a href="" class="left_layer1"><i class="fas fa-search"></i></a>
+          <div class="left_search_layer2">
+            <ul>
+              <li>
+                <input
+                  type="text"
+                  class="search"
+                  name="search"
+                  value=""
+                  placeholder=" Tìm kiếm theo tên, loại sản phẩm"
+                />
+                <input
+                  type="submit"
+                  value="Search"
+                  name="submit"
+                  class="button_search"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="top_middle">
+        <div>
+          <a href=""><img src="../img/logo.png" alt="" /></a>
+        </div>
+      </div>
+
+      <div class="top_right">
+        <div class="address"><a href="" class="right_layer1">contact</a></div>
+        <div>
+          <a href="" class="right_layer1">UserName</a>
+          <input class="logOut" type="submit" value="Log Out" />
+        </div>
+
+        <div class="cartt">
+          <a href="#" id="cart"
+            ><i class="fa fa-shopping-cart"></i>Cart<span class="badge"
+              >3</span
+            ></a
+          >
+
+          <div class="shopping-cart">
+            <form action="Pay" method="post">
+              <ul class="shopping-cart-items" style="list-style: none">
+                <li class="clearfix">
+                  <span class="checkbox">
+                    <input
+                      type="checkbox"
+                      class="check"
+                      name="checkbox"
+                      value=""
+                      onclick="alert('Chắc chắc chọn cái này')"
+                    />
+                  </span>
+                  <span class="img">
+                    <img
+                      src="https://storage.googleapis.com/cdn.nhanh.vn/store1/42511/ps/20210127/black_x_da1.jpg"
+                      alt="item1"
+                    />
+                  </span>
+                  <span class="child">
+                    <div class="child1">
+                      <a href="">
+                        <span class="item-name">Sony DSC-RX100M III</span> -
+                        <span class="item-color">Tee</span> -
+                        <span class="item-color">Black</span> -
+                        <span class="item-size">XL</span>
+                        <br />
+                        <br />
+                        <div>Số lượng : 1</div>
+                      </a>
+                    </div>
+                    <div class="child2">
+                      <span class="delete">
+                        <a
+                          href=""
+                          class="delete"
+                          style="text-transform: capitalize"
+                          ><i class="fas fa-times"> Xoá</i></a
+                        >
+                      </span>
+                      <span class="item-price">
+                        <span>1,250,000</span>
+                      </span>
+                    </div>
+                  </span>
+                </li>
+                <li class="clearfix">
+                  <span class="checkbox">
+                    <input
+                      type="checkbox"
+                      class="check"
+                      name="checkbox"
+                      value=""
+                      onclick="confirm('Chắc chắc chọn cái này')"
+                    />
+                  </span>
+                  <span class="img">
+                    <img
+                      src="https://storage.googleapis.com/cdn.nhanh.vn/store1/42511/ps/20210127/black_x_da1.jpg"
+                      alt="item1"
+                    />
+                  </span>
+                  <span class="child">
+                    <div class="child1">
+                      <a href="">
+                        <span class="item-name">Sony DSC-RX100M III</span> -
+                        <span class="item-color">Tee</span> -
+                        <span class="item-color">Black</span> -
+                        <span class="item-size">XL</span>
+                        <br />
+                        <br />
+                        <div>Số lượng : 1</div>
+                      </a>
+                    </div>
+                    <div class="child2">
+                      <span class="delete">
+                        <i class="fas fa-times"> Xoá</i>
+                      </span>
+                      <span class="item-price">
+                        <span>1,250,000</span>
+                      </span>
+                    </div>
+                  </span>
+                </li>
+                <li class="clearfix">
+                  <span class="checkbox">
+                    <input
+                      type="checkbox"
+                      class="check"
+                      name="checkbox"
+                      value=""
+                      onclick="confirm('Chắc chắc chọn cái này')"
+                    />
+                  </span>
+                  <span class="img">
+                    <img
+                      src="https://storage.googleapis.com/cdn.nhanh.vn/store1/42511/ps/20210127/black_x_da1.jpg"
+                      alt="item1"
+                    />
+                  </span>
+                  <span class="child">
+                    <div class="child1">
+                      <a href="">
+                        <span class="item-name">Sony DSC-RX100M III</span> -
+                        <span class="item-color">Tee</span> -
+                        <span class="item-color">Black</span> -
+                        <span class="item-size">XL</span>
+                        <br />
+                        <br />
+                        <div>Số lượng : 1</div>
+                      </a>
+                    </div>
+                    <div class="child2">
+                      <span class="delete">
+                        <i class="fas fa-times"> Xoá</i>
+                      </span>
+                      <span class="item-price">
+                        <span>1,250,000</span>
+                      </span>
+                    </div>
+                  </span>
+                </li>
+              </ul>
+
+              <div class="pay_now">
+                <input
+                  class="logOut"
+                  type="submit"
+                  value="Thanh toán ngay"
+                  style="border: 1px solid"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="middle_1">
+      <div class="slide">
+        <div class="dieuhuong">
+          <i class="fa fa-chevron-circle-left" onclick="Back();"></i>
+          <i class="fa fa-chevron-circle-right" onclick="Next();"></i>
+        </div>
+        <div class="chuyen-slide">
+          <img
+            src="https://storage.googleapis.com/cdn.nhanh.vn/store1/42511/album/7503/loveplaylist10.jpg"
+          />
+          <img
+            src="https://storage.googleapis.com/cdn.nhanh.vn/store1/42511/album/8956/co20203.jpg"
+          />
+          <img
+            src="https://storage.googleapis.com/cdn.nhanh.vn/store1/42511/album/7502/outta%20space1.jpg"
+          />
+          <img
+            src="https://storage.googleapis.com/cdn.nhanh.vn/store1/42511/album/7506/essantinal9.jpg"
+          />
+          <img
+            src="https://storage.googleapis.com/cdn.nhanh.vn/store1/42511/album/7505/reborn8.jpg"
+          />
+        </div>
+      </div>
+      <script type="text/javascript" src="../js/slide.js"></script>
+    </section>
+
+    <section class="middle_2">
+      <div class="top">
+        <div class="left">
+          <hr size="1px" />
+        </div>
+        <div class="mid">
+          <a href="">best seller</a>
+        </div>
+        <div class="right">
+          <hr size="1px" />
+        </div>
+      </div>
+
+      <div class="bottom">
+        <a
+          href=""
+          style="
+            text-decoration: none;
+            color: black;
+            background-image: url(../img/demo_1.jpg);
+          "
+        >
+          <div class="bottom_top">
+            <div class="status">New</div>
+            <div class="type">Áo Khoác</div>
+          </div>
+          <div class="bottom_bottom">
+            <div class="name">Faded Varsity Jacket</div>
+            <div class="price">1,250,000 ₫</div>
+          </div>
+        </a>
+        <a
+          href=""
+          style="
+            text-decoration: none;
+            color: black;
+            background-image: url(../img/demo_1.jpg);
+          "
+        >
+          <div class="bottom_top">
+            <div class="status">New</div>
+            <div class="type">Áo Khoác</div>
+          </div>
+          <div class="bottom_bottom">
+            <div class="name">Faded Varsity Jacket</div>
+            <div class="price">1,250,000 ₫</div>
+          </div>
+        </a>
+        <a
+          href=""
+          style="
+            text-decoration: none;
+            color: black;
+            background-image: url(../img/demo_1.jpg);
+          "
+        >
+          <div class="bottom_top">
+            <div class="status">New</div>
+            <div class="type">Áo Khoác</div>
+          </div>
+          <div class="bottom_bottom">
+            <div class="name">Faded Varsity Jacket</div>
+            <div class="price">1,250,000 ₫</div>
+          </div>
+        </a>
+        <a
+          href=""
+          style="
+            text-decoration: none;
+            color: black;
+            background-image: url(../img/demo_1.jpg);
+          "
+        >
+          <div class="bottom_top">
+            <div class="status">New</div>
+            <div class="type">Áo Khoác</div>
+          </div>
+          <div class="bottom_bottom">
+            <div class="name">Faded Varsity Jacket</div>
+            <div class="price">1,250,000</div>
+            <span>đ</span>
+          </div>
+        </a>
+        <a
+          href=""
+          style="
+            text-decoration: none;
+            color: black;
+            background-image: url(../img/demo_1.jpg);
+          "
+        >
+          <div class="bottom_top">
+            <div class="status">New</div>
+            <div class="type">Áo Khoác</div>
+          </div>
+          <div class="bottom_bottom">
+            <div class="name">Faded Varsity Jacket</div>
+            <div class="price">1,250,000 ₫</div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <section class="middle_2">
+      <div class="top">
+        <div class="left">
+          <hr size="1px" />
+        </div>
+        <div class="mid">
+          <a href="">sản phẩm mới</a>
+        </div>
+        <div class="right">
+          <hr size="1px" />
+        </div>
+      </div>
+
+      <div class="bottom">
+        <a
+          href=""
+          style="
+            text-decoration: none;
+            color: black;
+            background-image: url(../img/demo_1.jpg);
+          "
+        >
+          <div class="bottom_top">
+            <div class="status">New</div>
+            <div class="type">Áo Khoác</div>
+          </div>
+          <div class="bottom_bottom">
+            <div class="name">Faded Varsity Jacket</div>
+            <div class="price">1,250,000 ₫</div>
+          </div>
+        </a>
+        <a
+          href=""
+          style="
+            text-decoration: none;
+            color: black;
+            background-image: url(../img/demo_1.jpg);
+          "
+        >
+          <div class="bottom_top">
+            <div class="status">New</div>
+            <div class="type">Áo Khoác</div>
+          </div>
+          <div class="bottom_bottom">
+            <div class="name">Faded Varsity Jacket</div>
+            <div class="price">1,250,000 ₫</div>
+          </div>
+        </a>
+        <a
+          href=""
+          style="
+            text-decoration: none;
+            color: black;
+            background-image: url(../img/demo_1.jpg);
+          "
+        >
+          <div class="bottom_top">
+            <div class="status">New</div>
+            <div class="type">Áo Khoác</div>
+          </div>
+          <div class="bottom_bottom">
+            <div class="name">Faded Varsity Jacket</div>
+            <div class="price">1,250,000 ₫</div>
+          </div>
+        </a>
+        <a
+          href=""
+          style="
+            text-decoration: none;
+            color: black;
+            background-image: url(../img/demo_1.jpg);
+          "
+        >
+          <div class="bottom_top">
+            <div class="status">New</div>
+            <div class="type">Áo Khoác</div>
+          </div>
+          <div class="bottom_bottom">
+            <div class="name">Faded Varsity Jacket</div>
+            <div class="price">1,250,000 ₫</div>
+          </div>
+        </a>
+        <a
+          href=""
+          style="
+            text-decoration: none;
+            color: black;
+            background-image: url(../img/demo_1.jpg);
+          "
+        >
+          <div class="bottom_top">
+            <div class="status">New</div>
+            <div class="type">Áo Khoác</div>
+          </div>
+          <div class="bottom_bottom">
+            <div class="name">Faded Varsity Jacket</div>
+            <div class="price">1,250,000 ₫</div>
+          </div>
+        </a>
+        <a
+          href=""
+          style="
+            text-decoration: none;
+            color: black;
+            background-image: url(../img/demo_1.jpg);
+          "
+        >
+          <div class="bottom_top">
+            <div class="status">New</div>
+            <div class="type">Áo Khoác</div>
+          </div>
+          <div class="bottom_bottom">
+            <div class="name">Faded Varsity Jacket</div>
+            <div class="price">1,250,000 ₫</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="middle_3">
+      <div class="top">
+        <div class="left">
+          <hr size="1px" />
+        </div>
+        <div class="mid">
+          <a href="">blog</a>
+        </div>
+        <div class="right">
+          <hr size="1px" />
+        </div>
+      </div>
+
+      <div class="bottom">
+        <a
+          href=""
+          style="
+            text-decoration: none;
+            color: black;
+            background-image: url(../img/blog_demo.jpg);
+          "
+        >
+          <div class="bottom_bottom">
+            <div class="name">
+              04 ĐIỀU CẦN BIẾT ĐỂ BẢO QUẢN [ÁO DA] BỀN THEO THỜI GIAN
+            </div>
+            <div class="price">01/02/2021</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="middle_4">
+      <div class="top">@Tobistreetwear</div>
+      <div class="bottom">
+        <a href="https://www.instagram.com/p/CLteugqnOgR/" target="_blank">
+          <img src="../img/ins/1.jpeg" alt="" />
+        </a>
+        <a href="https://www.instagram.com/p/CLteugqnOgR/" target="_blank">
+          <img src="../img/ins/1.jpeg" alt="" />
+        </a>
+        <a href="https://www.instagram.com/p/CLteugqnOgR/" target="_blank">
+          <img src="../img/ins/1.jpeg" alt="" />
+        </a>
+        <a href="https://www.instagram.com/p/CLteugqnOgR/" target="_blank">
+          <img src="../img/ins/1.jpeg" alt="" />
+        </a>
+        <a href="https://www.instagram.com/p/CLteugqnOgR/" target="_blank">
+          <img src="../img/ins/1.jpeg" alt="" />
+        </a>
+        <a href="https://www.instagram.com/p/CLteugqnOgR/" target="_blank">
+          <img src="../img/ins/1.jpeg" alt="" />
+        </a>
+        <a href="https://www.instagram.com/p/CLteugqnOgR/" target="_blank">
+          <img src="../img/ins/1.jpeg" alt="" />
+        </a>
+        <a href="https://www.instagram.com/p/CLteugqnOgR/" target="_blank">
+          <img src="../img/ins/1.jpeg" alt="" />
+        </a>
+        <a href="https://www.instagram.com/p/CLteugqnOgR/" target="_blank">
+          <img src="../img/ins/1.jpeg" alt="" />
+        </a>
+        <a href="https://www.instagram.com/p/CLteugqnOgR/" target="_blank">
+          <img src="../img/ins/1.jpeg" alt="" />
+        </a>
+      </div>
+    </section>
+    <section class="middle_5">
+      <div class="left">
+        <div class="top">
+          <div>tìm kiếm</div>
+          <div>giới thiệu</div>
+          <div>chính sách đổi trả</div>
+          <div>chính sách bảo mật</div>
+          <div>điều khoản dịch vụ</div>
+        </div>
+        <div class="bottom">
+          TOBI STREETWEAR 2021 © ALL RIGHTS RESERVED | PROUDLY BUILT BY TOBI X
+          NHANH
+        </div>
+      </div>
+      <div class="right"></div>
+    </section>
+  </body>
+</html>

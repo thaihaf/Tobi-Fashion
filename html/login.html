@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="top">
+      <div class="top_left">
+        <a href="">store</a>
+        <a href="">blog</a>
+        <a href="">contact</a>
+      </div>
+
+      <div class="top_middle">
+        <div><img src="../img/logo.png" alt="" /></div>
+      </div>
+
+      <div class="top_right">
+        <nav>
+          <a href="">Cơ Sở</a>
+          <a href="">Đăng Nhập</a>
+          <a href=""><i class="fas fa-search"></i></a>
+          <a href=""><i class="fas fa-cart-arrow-down"></i></a>
+        </nav>
+      </div>
+    </nav>
+
+    <section class="middle">
+      <div class="left">
+        <p>Đăng Nhập</p>
+        <hr size="5px" color="black" width="100px" align="left" />
+      </div>
+      <div class="right">
+        <form name="login" action="login" method="POST">
+          <p>
+            <input
+              type="text"
+              name="nameLogin"
+              value=""
+              placeholder="Tên Đăng Nhập"
+            />
+          </p>
+          <p>
+            <input
+              type="password"
+              name="password"
+              value=""
+              placeholder="Mật Khẩu"
+            />
+          </p>
+          <p><input type="submit" class="submit" value="Đăng Nhập" /></p>
+          <p><a href="">Đăng Ký</a></p>
+        </form>
+        <p>
+          <input
+            type="button"
+            class="submit"
+            name="applyDiscount"
+            value="Đăng Ký"
+            id="myBtn"
+          />
+        </p>
+        <p>
+          <input
+            type="button"
+            class="changPass"
+            name="applyDiscount"
+            value="Đổi mật khẩu"
+            id="myBtn2"
+          />
+        </p>
+      </div>
+    </section>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="title">CHỈNH SỬA THÔNG TIN</div>
+        <div class="right">
+          <form name="editProfile" action="editProfile" method="POST" id="form">
+            <p>
+              <input
+                type="text"
+                name="fullName"
+                value=""
+                placeholder="Họ và Tên"
+              />
+            </p>
+            <p>
+              <input
+                type="text"
+                name="phone"
+                value=""
+                placeholder="Số Điện Thoại"
+              />
+            </p>
+            <p>
+              <input type="email" name="email" value="" placeholder="Email" />
+            </p>
+
+            <p>
+              <input
+                type="button"
+                class="submit"
+                name="applyDiscount"
+                value="Xác nhận"
+                id="myBtn"
+              />
+            </p>
+            <p>
+              <input
+                type="button"
+                class="changPass"
+                name="applyDiscount"
+                value="Đổi mật khẩu"
+                id="myBtn2"
+              />
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <section class="middle_5">
+      <div class="left">
+        <div class="top">
+          <div>tìm kiếm</div>
+          <div>giới thiệu</div>
+          <div>chính sách đổi trả</div>
+          <div>chính sách bảo mật</div>
+          <div>điều khoản dịch vụ</div>
+        </div>
+        <div class="bottom">
+          TOBI STREETWEAR 2021 © ALL RIGHTS RESERVED | PROUDLY BUILT BY TOBI X
+          NHANH
+        </div>
+      </div>
+      <div class="right"></div>
+    </section>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+      var modal2 = document.getElementById("myModal2");
+
+      // Get the button that opens the modal
+      var btn2 = document.getElementById("myBtn2");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close2")[0];
+
+      // When the user clicks the button, open the modal
+      btn2.onclick = function () {
+        modal2.style.display = "block";
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal2.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal2) {
+          modal2.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

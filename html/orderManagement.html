@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/orderManager.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="top">
+      <img src="../img/logo.png" alt="" class="logo" />
+    </div>
+    <div class="middle">
+      <div class="middle-left">
+        <div class="middle-left-parent">
+          <div class="middle-left-title" style="text-transform: uppercase; ">quản lý đơn hàng</div>
+        <div class="middle-left-child" style="text-transform: uppercase; "><a href="orderManager.jsp">tất cả <span class="a">5</span></a></div>
+        <div class="middle-left-child" style="text-transform: uppercase; "><a href="orderManager_2.jsp">chờ gói hàng <span class="a">5</a></div>
+        <div class="middle-left-child" style="text-transform: uppercase; "><a href="orderManager_3.jsp">chờ xác nhận huỷ <span class="a">5</a></div>
+        <div class="middle-left-child" style="text-transform: uppercase; "><a href="orderManager_4.jsp">đang giao <span class="a">5</a></div>
+        <div class="middle-left-child" style="text-transform: uppercase; "><a href="orderManager_5.jsp">đã giao <span class="a">5</a></div>
+        <style>
+          span.a{
+            background-color: #6394f8;
+            border-radius: 10px;
+            color: white;
+            font-size: 12px;
+            padding: 3px 6px
+          }
+        </style>
+        </div>
+        <div class="middle-left-parent">
+          <div class="middle-left-title">quản lý sản phẩm</div>
+          <div class="middle-left-child"><a href="">tất cả sản phẩm</a></div>
+          <div class="middle-left-child"><a href="">thêm sản phẩm</a></div>
+        </div>
+        <div class="middle-left-parent">
+          <div class="middle-left-title">khác</div>
+          <div class="middle-left-child"><a href="">doanh thu</a></div>
+          <div class="middle-left-child"><a href="">phản hồi</a></div>
+        </div>
+      </div>
+
+      
+      <div class="middle-right">
+        <div class="middle-right-middle">
+          <form action="search" method="POST">
+            
+          </form>
+        </div>
+
+        <div class="middle-right-bottom">
+          <table border="1">
+            <thead>
+              <tr>
+                <th>sản phẩm</th>
+                <th>tổng đơn hàng</th>
+                <th>trạng thái</th>
+                <th>vận chuyển</th>
+                <th>khách hàng</th>
+                <th>cập nhật</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="name"><div>djkfbdb</div>
+                <div>sdjvsvsnjk</div></td>
+                <td class="total-price"></td>
+                <td class="status"></td>
+                <td class="ship"></td>
+                <td class="customer"></td>
+                <td class="update-status">
+                  <input type="submit" value="xác nhận" name="updateStatus" />
+                </td>
+              </tr>
+              <tr>
+                <td>rggrgerr</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

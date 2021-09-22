@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/productManager.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="top">
+      <img src="../img/logo.png" alt="" class="logo" />
+    </div>
+    <div class="middle">
+      <div class="middle-left">
+        <div class="middle-left-parent">
+          <div class="middle-left-title">quản lý đơn hàng</div>
+          <div class="middle-left-child"><a href="">tất cả</a></div>
+          <div class="middle-left-child"><a href="">chờ xác nhận</a></div>
+          <div class="middle-left-child"><a href="">đang giao</a></div>
+          <div class="middle-left-child"><a href="">đã giao</a></div>
+        </div>
+        <div class="middle-left-parent">
+          <div class="middle-left-title">quản lý sản phẩm</div>
+          <div class="middle-left-child"><a href="">tất cả sản phẩm</a></div>
+          <div class="middle-left-child"><a href="">thêm sản phẩm</a></div>
+        </div>
+        <div class="middle-left-parent">
+          <div class="middle-left-title">khác</div>
+          <div class="middle-left-child"><a href="">doanh thu</a></div>
+          <div class="middle-left-child"><a href="">phản hồi</a></div>
+        </div>
+      </div>
+
+      <div class="middle-right">
+        <div class="middle-right-top">
+          <div class="top-child">
+            <a href="" class="child" id="all">tất cả</a>
+          </div>
+          <div class="top-child">
+            <a href="" class="child" id="active">đang hoạt động</a>
+          </div>
+          <div class="top-child">
+            <a href="" class="child" id="hide">đang ẩn</a>
+          </div>
+          <div class="top-child">
+            <a href="" class="child" id="soldout">hết hàng</a>
+          </div>
+        </div>
+
+        <div class="middle-right-middle">
+          <form action="search" method="POST">
+            <div class="input">
+              <div class="input-child">
+                Tên sản phẩm
+                <input
+                  type="text"
+                  name="name"
+                  class="name"
+                  value=""
+                  placeholder="Tên sản phẩm"
+                />
+              </div>
+
+              <div class="input-child">
+                Danh mục
+                <select name="typeProduct">
+                  <option class="typeProduct">chọn</option>
+                  <option class="typeProduct">jeans</option>
+                </select>
+              </div>
+
+              <div class="input-child">
+                Kho hàng
+                <input
+                  type="text"
+                  name="minStock"
+                  value=""
+                  class="stock"
+                  placeholder="Kho hàng"
+                />
+                -
+                <input
+                  type="text"
+                  name="maxStock"
+                  value=""
+                  class="stock"
+                  placeholder="Kho hàng"
+                />
+              </div>
+
+              <div class="input-child">
+                Đã bán
+                <input
+                  type="text"
+                  name="minSoldOut"
+                  value=""
+                  class="soldOut"
+                  placeholder="Đã bán"
+                />
+                -
+                <input
+                  type="text"
+                  name="maxSoldOut"
+                  value=""
+                  class="soldOut"
+                  placeholder="Đã bán"
+                />
+              </div>
+            </div>
+            <input type="submit" class="submit" value="Tìm" name="search" />
+          </form>
+        </div>
+
+        <div class="middle-right-bottom">
+          <div class="bottom-top">
+            <span>1</span>
+            <span>Product</span>
+          </div>
+          <div class="bottom-middle">
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>tên sản phẩm</th>
+                  <th>màu</th>
+                  <th>size</th>
+                  <th>giá</th>
+                  <th>kho hàng</th>
+                  <th>đã bán</th>
+                  <th>thao tác</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="name">dfbf</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td><a href="">Sửa</a></td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

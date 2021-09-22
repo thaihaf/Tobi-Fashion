@@ -1,0 +1,111 @@
+.top {
+    width: 100%;
+    object-fit: contain;
+    height: 90px;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+.top img.logo{
+    height: 100%;
+}
+
+.middle{
+    width: 100%;
+    /* border: 1px solid; */
+    display: flex;
+    margin-top: 10px;
+}
+.middle .middle-left{
+    width: 18%;
+    /* border: 1px solid; */
+    background-color: #f6f6f6;
+    padding-bottom: 50px;
+
+
+}
+.middle .middle-left .middle-left-parent{
+    margin-top: 20px;
+    /* border: 1px solid; */
+    margin-left: 15%;
+
+}
+.middle .middle-left .middle-left-parent .middle-left-title{
+    /* border: 1px solid; */
+    font-size: 15px;
+    color: #999;
+    text-transform: capitalize;
+    font-family: Helvetica Neue,Helvetica,RobotoRegular,Droid Sans,Arial,sans-serif;
+    font-weight: bold;
+    
+}
+.middle .middle-left .middle-left-parent .middle-left-child{
+    /* border: 1px solid; */
+    font-size: 13px;
+    text-transform: capitalize;
+    font-family: Helvetica Neue,Helvetica,RobotoRegular,Droid Sans,Arial,sans-serif;
+   padding-left: 15px;
+   margin-top: 5px;
+}
+.middle .middle-left .middle-left-parent .middle-left-child a{
+    /* border: 1px solid; */
+    color:black;
+    text-transform: capitalize;
+    font-family: Helvetica Neue,Helvetica,RobotoRegular,Droid Sans,Arial,sans-serif;
+}
+.middle .middle-left .middle-left-parent .middle-left-child a:hover{
+    /* border: 1px solid; */
+    color:red;
+    text-decoration: none;
+}
+
+.middle .middle-right{
+    width: 100%;
+    margin-left: 10px;
+    /* border: 1px solid; */
+    background-color: #f6f6f6;
+    padding: 20px;
+
+}
+.middle .middle-right .middle-right-middle .input{
+    width: 100%;
+    /* border: 1px solid; */
+    height: 70px;
+
+}
+.middle .middle-right .middle-right-middle .input input.input-search{
+    padding: 5px ;
+    width: 25%;
+}
+.middle .middle-right .middle-right-middle .input input.button-search{
+    padding: 5px ;
+}
+
+.middle .middle-right .middle-right-bottom{
+    /* border: 1px solid; */
+    
+}
+.middle .middle-right .middle-right-bottom table{
+    border: 1px solid;
+    width: 100%;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+.middle .middle-right .middle-right-bottom table thead th{
+    text-transform: capitalize;
+    border: 1px solid;
+    padding: 10px 0px 12px 0px;
+
+}
+.middle .middle-right .middle-right-bottom table tbody td{
+    text-transform: capitalize;
+    border: 1px solid;
+    padding: 10px 0px 12px 0px;
+
+}
+.middle .middle-right .middle-right-bottom table tbody td.name{
+    text-transform: uppercase;
+    border: 1px solid;
+    padding: 10px 0px 12px 0px;
+
+}

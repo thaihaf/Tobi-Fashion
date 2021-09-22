@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/pay.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    
+</head>
+
+<body>
+  <form action="orderProducts" method="POST">
+    <section class="top">
+      <a href=""><img src="../img/logo.png" alt="" /></a>
+    </section>
+    <hr />
+
+    <section class="middle">
+      <div class="middle_left">
+        <div class="middle_left_group_1">
+          <div class="middle_left_group_1_1">thông tin giao hàng</div>
+
+          <div class="middle_left_group_1_2">
+            <i class="far fa-check-circle"></i>
+            Thông tin của bạn tuyệt đối bảo mật
+          </div>
+
+          <div class="middle_left_group_1_3">
+            <input type="text" class="name" name="name" value="" placeholder="Họ Tên" />
+          </div>
+
+          <div class="middle_left_group_1_4">
+            <input type="text" class=email name="name" value="" placeholder="Email" />
+            <input type="text" class="phone" name="name" value="" placeholder="Số Điện Thoại" />
+          </div>
+
+          <div class="middle_left_group_1_5">
+            <input type="text" class="address" name="address" value="" placeholder="Địa Chỉ" />
+          </div>
+
+          <div class="middle_left_group_1_6">
+            <select name="customerCityID" class="customerCityID">
+              <option>Chọn Tỉnh/Thành Phố</option>
+              <option>Hà Nội</option>
+              <option>Hưng Yên</option>
+            </select>
+            <select name="customerDistrictID" class="customerDistrictID">
+              <option>Chọn Quận/Huyện</option>
+              <option>Hà Nội</option>
+              <option>Hưng Yên</option>
+            </select>
+            <select name="customerWardID" class="customerWardID">
+              <option>Chọn Phường/Xã</option>
+              <option>Hà Nội</option>
+              <option>Hưng Yên</option>
+            </select>
+          </div>
+        </div>
+
+
+
+        <div class="middle_left_group_2">
+          <div class="middle_left_group_2_1">hình thức vận chuyển</div>
+          <div class="middle_left_group_2_2">
+            <i class="far fa-check-circle"></i>
+            Chọn hãng vận chuyển
+          </div>
+
+          <div class="middle_left_group_2_3">
+            <table>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Hãng vận chuyển</th>
+                  <th>Thời gian</th>
+                  <th>Hình thức</th>
+                  <th>Phí vận chuyển</th>
+                  <th>Phí thu hộ</th>
+                  <th>Tổng phí</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="input"><input type="radio" class="ship" name="ship" value="" /></td>
+                  <td><img src="https://cdn.nhanh.vn/cdn/carrier/carr_1543570719_597.jpg" alt=""></td>
+                  <td>6-8 ngày</td>
+                  <td>Giao chậm</td>
+                  <td>12,800</td>
+                  <td>15000</td>
+                  <td>27,800</td>
+                </tr>
+                <tr>
+                  <td class="input"><input type="radio" class="ship" name="ship" value="" /></td>
+                  <td><img src="https://cdn.nhanh.vn/cdn/carrier/carr_1611734039_968.png" alt=""></td>
+                  <td>6-9 ngày</td>
+                  <td>TMĐT Đường bộ</td>
+                  <td>30,000</td>
+                  <td></td>
+                  <td>30,000</td>
+                </tr>
+                <tr>
+                  <td class="input"><input type="radio" class="ship" name="ship" value="" /></td>
+                  <td><img src="https://cdn.nhanh.vn/cdn/carrier/carr_1571969847_809.png" alt=""></td>
+                  <td>2-3 ngày</td>
+                  <td>Tiêu Chuẩn NV</td>
+                  <td>35,000</td>
+                  <td></td>
+                  <td>35,000</td>
+                </tr>
+                <tr>
+                  <td class="input"><input type="radio" class="ship" name="ship" value="" /></td>
+                  <td><img src="https://cdn.nhanh.vn/cdn/carrier/carr_1611734039_968.png" alt=""></td>
+                  <td>1-2 ngày</td>
+                  <td>TMĐT Đường bay</td>
+                  <td>49,000</td>
+                  <td></td>
+                  <td>49000</td>
+                </tr>
+                <tr>
+                  <td class="input"><input type="radio" class="ship" name="ship" value="" /></td>
+                  <td><img src="https://cdn.nhanh.vn/cdn/carrier/carr_1543570719_597.jpg" alt=""></td>
+                  <td>2-3 ngày</td>
+                  <td>Giao Nhanh</td>
+                  <td>36,900</td>
+                  <td>15,000</td>
+                  <td>51000</td>
+                </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+
+
+
+        <div class="middle_left_group_3">
+          <div class="middle_left_group_3_1">phương thức thanh toán</div>
+          <div class="middle_left_group_3_2">
+            <input type="radio" name="pay" value="" class="pay" />
+            <span class="pay">Thanh toán khi nhận hàng</span>
+          </div>
+          <div class="middle_left_group_3_2">
+            <input type="radio" name="pay" value="" class="pay" />
+            <span class="pay">Thanh toán chuyển khoản</span>
+          </div>
+
+          <div class="middle_left_group_3_3">
+            <div>Ghi Chú</div>
+            <textarea name="">
+          </textarea>
+          </div>
+        </div>
+
+        <div class="middle_left_group_4">
+          <a href="" class="middle_left_group_4_1">
+            <i class="fas fa-arrow-circle-left"></i>
+            <span> Quay lại giỏ hàng</span>
+          </a>
+          <input type="submit" class="middle_left_group_4_2" value="hoàn tất đơn hàng" name="confirmOrder" />
+        </div>
+
+      </div>
+
+      <div class="middle_right">
+        <hr>
+        <div class="middle_right_group_1">
+          <div class="img"><img
+              src="https://storage.googleapis.com/cdn.nhanh.vn/store1/42511/ps/20210125/aoteedonut01.jpg" alt=""></div>
+          <div class="detail">
+            <div class="name">donut worry</div>
+            <div class="style">Tee</div>
+            <div class="color">Black</div>
+            <div class="size">Xl</div>
+          </div>
+          <div class="price">
+            <span>350,000</span>
+            <span>đ</span>
+          </div>
+        </div>
+        <hr>
+        <div class="middle_right_group_1">
+          <div class="img"><img
+              src="https://storage.googleapis.com/cdn.nhanh.vn/store1/42511/ps/20210125/aoteedonut01.jpg" alt=""></div>
+          <div class="detail">
+            <div class="name">donut worry</div>
+            <div class="style">Tee</div>
+            <div class="color">Black</div>
+            <div class="size">Xl</div>
+          </div>
+          <div class="price">
+            <span>350,000</span>
+            <span>đ</span>
+          </div>
+        </div>
+        <hr>
+        
+
+        <div class="middle_right_group_2">
+            <div class="titlee">
+              <p class="titlee1">Mã Đang Dùng : <span class="titlee2">dvsfd</span></p>
+            </div>
+          <input type="button" class="middle_right_group_2_2"  name="applyDiscount" value="Lấy Mã Giảm Giá" id="myBtn"/>
+
+          
+        </div>
+        <div class="middle_right_group_2">
+          <div class="titlee">
+            <p class="titlee1">Xu của bạn : <span class="titlee2"> 0</span>đ</p>
+          </div>
+          <a href="" class="middle_right_group_2_3"><p>Sử dụng xu</p></a>
+        </div>
+        
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+             <div class="title">
+               Mã Giảm Giá Của Bạn
+             </div>
+             
+             <div class="search">
+                <input type="text" class="text"  name="" value="" placeholder="Tìm kiếm theo Code"/>
+
+                <input type="button" class="button"  name="" value="Tìm" />
+             </div>
+             <div class="content">
+               <div class="left-content">
+                  <img src="../img/discount.jpeg.png" alt="">
+               </div>
+               <div class="right-content">
+                   <div>Hoàn 10% xu</div>
+                   <div>Tối đa 10k Xu</div>
+                   <div>Hoàn xu Xtra</div>
+                   <a href="">Dùng Ở Đây Này</a>
+               </div>
+             </div>
+             <div class="content">
+               <div class="left-content">
+                  <img src="../img/discount.jpeg.png" alt="">
+               </div>
+               <div class="right-content">
+                   <div>Hoàn 10% xu</div>
+                   <div>Tối đa 10k Xu</div>
+                   <div>Hoàn xu Xtra</div>
+                   <a href="">Dùng Ở Đây Này</a>
+               </div>
+             </div>
+             <div class="content">
+               <div class="left-content">
+                  <img src="../img/discount.jpeg.png" alt="">
+               </div>
+               <div class="right-content">
+                   <div>Hoàn 10% xu</div>
+                   <div>Tối đa 10k Xu</div>
+                   <div>Hoàn xu Xtra</div>
+                   <a href="">Dùng Ở Đây Này</a>
+               </div>
+             </div>
+          </div>
+          
+        
+        </div>
+
+        <hr>
+        <div class="middle_right_group_3">
+          <div class="middle_right_group_3_1">
+            <span>Chi phí</span>
+            <span class="price">
+              <span class="price_1">700,000</span>
+              <span class="price_2">đ</span>
+            </span>
+          </div>
+          <div class="middle_right_group_3_2">
+            <span>Phí Vận Chuyển</span>
+            <span class="price">
+              <span class="price_1">30.000</span>
+              <span class="price_2">đ</span>
+            </span>
+          </div>
+        </div>
+        <hr>
+        <div class="middle_right_group_4">
+          <span class="middle_right_group_4_1">tổng thanh toán</span>
+            <span class="middle_right_group_4_2">
+              <span class="total_price">730,000</span>
+              <span class="middle_right_group_4_2_1">đ</span>
+        </div>
+        <hr>
+      </div>
+    </section>
+  </form>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+</body>
+
+</html>
